@@ -1,0 +1,45 @@
+.bubble {
+  border-radius: 15px;
+
+  width: fit-content;
+  padding: 10px;
+  clear: both;
+  margin: 10px 20px;
+  font-size: 13px;
+}
+
+@keyframes pan-agent {
+  from {
+    transform: translateX(-100%);
+    opacity: 0.1;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes pan-user {
+  from {
+    transform: translateX(100%);
+    opacity: 0.1;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.user {
+  background-color: #f39e91;
+  float: right;
+  animation: pan-user 0.4s;
+}
+
+.agent {
+  background-color: #ffb83c;
+  float: left;
+  animation: pan-agent 0.4s;
+}
